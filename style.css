@@ -1,0 +1,89 @@
+html{
+    background-color: #EFBCB2;
+}
+.alura-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+.texto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    color: #0A3871;
+}
+.texto_decodificado{
+    position: absolute;
+    width: 400px;
+    height: 538px;
+    left: 920px;
+    top: 40px;
+
+    background: #985277;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+#muñeco{
+    position: absolute;
+    height: 243px; 
+    left: 67px;
+    top: 100px;
+}
+#Mensaje{
+    position: absolute;
+    top: 350px;
+    left: 116px;
+}
+#Ingresas{
+    position: absolute;
+    top: 370px;
+    left: 36.2915px;
+    text-align: center;
+}
+#Aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 451px;
+}
+.final{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #E4FA9D;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
