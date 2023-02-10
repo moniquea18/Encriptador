@@ -1,89 +1,99 @@
-html{
-    background-color: #EFBCB2;
+*{
+
+    background: #EFBCB2;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
 }
 .alura-logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    padding-top: 40px;
+    margin-left: 30px;
+    width: 9%;
 }
-.texto{
-    position: absolute;
-    width: 577px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
-    font-family: 'Inter';
+main{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 240px;
+}
+
+.textarea{
+   border: none;
+   color: #0A3871;
+   margin-top: 50px;
+   margin-right: 100px;
+   text-transform: lowercase;/*Convierte el texto del textarea en minuscula*/
+   font-style: normal;
+   font-size: 32px;
+   resize: none;
+   cursor: pointer;
+   height: 250px;
+}
+::placeholder{ color: #0A3871;}
+    .textarea:focus{
+        outline: none;
+    }
+.Aviso{
+    margin-top: 35px;
+    margin-bottom: 5px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    /* identical to box height, or 48px */
+    font-size: small;
+}
+.botones{
+    display: flex;
+}
+.btn-encriptar{
+    background-color: #0A3871;
+    color: aliceblue;
+    width: 50%;
+    height: 60px;
+    border-radius: 24%;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.btn-desencriptar{
+    background-color: aliceblue;
     color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 50%;
+    height: 60px;
+    border-radius: 24%;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 30px;
 }
-.texto_decodificado{
-    position: absolute;
-    width: 400px;
-    height: 538px;
-    left: 920px;
-    top: 40px;
-
-    background: #985277;
-
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+.Mensaje{
+   background: #985277;
+   border: none;
+   background-image: url("Muñeco.png");
+   background-size: 60%;
+   background-repeat: no-repeat;
+   background-position: 50% 20%;
+   border-radius: 24px;
+   color: aliceblue;
+   font-style: normal;
+   font-size: 32px;
+   resize: none;
+   height: 423px;
+   width: 270px;
+   margin-left: 100px;
 }
-#muñeco{
-    position: absolute;
-    height: 243px; 
-    left: 67px;
-    top: 100px;
-}
-#Mensaje{
-    position: absolute;
-    top: 350px;
-    left: 116px;
-}
-#Ingresas{
-    position: absolute;
-    top: 370px;
-    left: 36.2915px;
-    text-align: center;
-}
-#Aviso{
+.Copiar{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 8px;
-    position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 240px;
-    top: 451px;
-}
-.final{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
-    background: #E4FA9D;
-    border-radius: 24px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    position: absolute;
+    width: 149px;
+    height: 45px;
+    left: 1015px;
+    top: 425px;
+    background-color: #EFBCB2;
+    color: black;
+    border-radius: 24%;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }

@@ -4,30 +4,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Decodificador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <title>Decodificador</title>
     </head>
     <body>
-        <div class="alura-logo">
-            <h1><img src="Logo.png"></h1>
-        </div>
+        <header>
+            <img class="alura-logo" src="Logo.png" alt="Logo de Alura">
+        </header>
             
-        <div class="texto">
-            <p>Ingrese el texto a codificar aquí</p>
-        </div>
-
-        <div class="texto_decodificado">
-            <img id="muñeco" src="Muñeco.png">
-            <p id="Mensaje">Ningun mensaje encontrado</p>
-            <p id="Ingresas">Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-        
-        <div class="final">
-            <p id="Aviso">Solo letras minúsculas y sin acentos</p>
-            <p>Decodificar</p>
-            <p>Descodificar</p>
-        </div>
-
+        <main>
+            <section>
+                <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="Aviso">
+                    <h6><iconify-icon icon="bi:exclamation-circle"></iconify-icon>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar">
+                        Encriptar
+                    </button>
+                    <button class="btn-desencriptar">
+                        Desencriptar
+                    </button>
+                </div>
+            </section>
+            <section>
+                <textarea class="Mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="Copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
